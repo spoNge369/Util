@@ -50,6 +50,7 @@ if ( $filename ne '' and $key ne '' ) {
 	$key=~s/([a-fA-F0-9][a-fA-F0-9])/pack("C",hex($1))/eg;
 	my $xd = xor_encode $content, $key;
 	print $xd;
+	close $fh;
 	exit 0;
 
 }
