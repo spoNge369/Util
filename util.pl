@@ -17,8 +17,8 @@ Usage: util.pl [options ...]
 
 Examples:
 
-   util.pl -u "'ping -c1 192.168.1.1'"         -e               #%27ping%20-c1%20192.168.1.1%27
-   util.pl "%27ping%20-c1%20192.168.1.1%27" -d               #ping -c1 192.168.1.1  
+   util.pl -u "'ping -c1 192.168.1.1'"      -e            # %27ping%20-c1%20192.168.1.1%27
+   util.pl "%27ping%20-c1%20192.168.1.1%27" -d            # 'ping -c1 192.168.1.1'
 
 	};
 
