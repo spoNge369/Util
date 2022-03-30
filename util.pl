@@ -68,8 +68,8 @@ if ( $url ne '' and $encode ) {
 #url decode
 if ( $url ne '' and $decode ) {
 
-	my $decoded = url_unescape $url;
+    my $decoded = url_unescape $url;
     print $decoded;
-	exit 0;
+    exit 0;
 
 }
