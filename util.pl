@@ -14,12 +14,14 @@ Usage: perl util.pl [options ...]
    -u, --url
    -d, --decode
    -e, --encode
+   -f file_xor -k 'key_hex'
 
 Examples:
 
    perl util.pl -u "'ping -c1 192.168.1.1'"         -e            # %27ping%20-c1%20192.168.1.1%27
    perl util.pl -u "%27ping%20-c1%20192.168.1.1%27" -d            # 'ping -c1 192.168.1.1'
-
+   perl util.pl -f file_xor -k 'd1'                               # d1: 0xd1
+ 
 	};
 
 	@ARGV <= 1 and print $help and exit 0;
